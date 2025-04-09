@@ -8,4 +8,10 @@ One function per operation, in order.
 def add(a, b): 
     pass
 
+def subtraction (a, b)
+    return a - b
+
+
+
+
 
