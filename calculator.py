@@ -27,8 +27,7 @@ def log(a, b):
 def exp(a, b):
     return a ** b
 
-def test_divide(self): # 3 assertions
-    return
+
 
 
 
