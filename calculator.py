@@ -68,8 +68,7 @@ def logarithm(a, b):
 def exponent(a, b):
     return a ** b
 
-def test_divide(self): # 3 assertions
-    return
+
 
 
 
