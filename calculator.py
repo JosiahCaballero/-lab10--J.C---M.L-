@@ -44,7 +44,8 @@ def divide(a, b):
         return str(e)
 
 def add(a, b): 
-    pass
+    return a + b
+
 
 def subtraction (a, b)
     return a - b
