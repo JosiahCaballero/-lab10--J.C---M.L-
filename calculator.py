@@ -22,8 +22,7 @@ def sub(a, b):
 def multiply(a, b):
     return a * b
 
-def mul(a, b):
-    return multiply(a, b)
+
 
 
 def div(a, b):
