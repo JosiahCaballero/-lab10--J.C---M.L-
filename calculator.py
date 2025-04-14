@@ -1,3 +1,6 @@
+# https://github.com/JosiahCaballero/-lab10--J.C---M.L-
+# Partner 1: Maria Luiza C Nogueira
+# Partner 2: Josiah Caballero
 """
 calculator.py
 - Defines functions used to create a simple calculator
