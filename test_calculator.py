@@ -1,6 +1,8 @@
 import unittest
 from calculator import *
-
+# https://github.com/JosiahCaballero/-lab10--J.C---M.L-
+# Partner 1: Maria Luiza C Nogueira
+# Partner 2: Josiah Caballero
 
 def multiply(param, param1):
     pass
