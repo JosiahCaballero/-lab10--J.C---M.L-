@@ -1,6 +1,11 @@
 import unittest
 from calculator import *
 
+
+def multiply(param, param1):
+    pass
+
+
 class TestCalculator(unittest.TestCase):
     # Partner 2
     def test_add(self): # 3 assertions
@@ -16,11 +21,14 @@ class TestCalculator(unittest.TestCase):
 
     # Partner 1
     def test_multiply(self): # 3 assertions
-        pass
+        self.assertEqual(multiply(5,5),25)
+        self.assertEqual(multiply(5,10), 50)
+        self.assertEqual(multiply(1,5),5)
 
     def test_divide(self): # 3 assertions
-        pass
-    ##########################
+        self.assertEqual(div(5, 1), 5)
+        self.assertEqual(div(50, 10), 5)
+        self.assertEqual(div(10, 5), 2)
 
     # Partner 2
     def test_divide_by_zero(self): # 1 assertion
@@ -47,17 +55,29 @@ class TestCalculator(unittest.TestCase):
         # call log function inside, example:
         # with self.assertRaises(<INSERT_ERROR_TYPE>):
         #     logarithm(0, 5)
+        with self.assertRaises(ValueError):
+            logarithm(10, 0)
+        with self.assertRaises(ValueError):
+            log(0,5)
         pass
 
-    def test_hypotenuse(self): # 3 assertions
+    def test_hypotenuse(self):
+        # 3 assertions
+        self.assertEqual(hypotenuse(3,4),5)
+        self.assertEqual(hypotenuse(5,12),13)
+        self.assertAlmostEqual(hypotenuse(1.5,2.0),math.hypot(1.5,2.0),places=5)
         pass
 
     def test_sqrt(self): # 3 assertions
         # Test for invalid argument, example:
         # with self.assertRaises(<INSERT_ERROR_TYPE>):
+        with self.assertRaises(ValueError):
+            square_root(-9)
         #    square_root(NUM)
+        self.assertEqual(square_root(16),4)
         # Test basic function
-        pass
+        self.assertAlmostEqual(square_root(2),math.sqrt(2),places=5)
+
     ##########################
 
 # Do not touch this
