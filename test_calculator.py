@@ -4,10 +4,6 @@
 import unittest
 from calculator import *
 
-def multiply(param, param1):
-    pass
-
-
 class TestCalculator(unittest.TestCase):
     # Partner 2
     def test_add(self): # 3 assertions
